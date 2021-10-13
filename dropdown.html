@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Web Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: inline-block;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+}
+.content{
+	position: absolute;
+	display: none;
+	width: 250px;
+	background-color: #dfdfdf;
+	box-shadow: -2px 2px 10px rgba(0,0,0,0.25);
+	transition: all 0.5s linear;
+}
+.content a{
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: black;
+}
+.content a:hover{
+	background-color: #cfcfcf;
+}
+.container button{
+	border: none;
+	width: 250px;
+	padding: 14px 16px;
+	background-color: green;
+	color: white;
+}
+.container:hover .content{
+	display: block
+}
+
+.container:hover button{
+    opacity: 0.75;
+}
+.container2{
+	display: inline-block;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.content2{
+	position: absolute;
+	display: none;
+	width: 250px;
+	background-color: #dfdfdf;
+	box-shadow: -2px 2px 10px rgba(0,0,0,0.25);
+	transition: all 0.5s linear;
+	list-style: none;
+}
+.container2 button{
+	border: none;
+	width: 250px;
+	padding: 14px 16px;
+	background-color: orange;
+	color: white;
+}
+
+.container2:hover button{
+    border: 1px solid blue;
+}
+
+.container2:hover .content2{
+	display: block;
+}
+.content2 > li a{
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	color: black;
+	outline: none;
+}
+.content2 > li a:hover{
+	background: #cfcfcf;
+}
+.inner{
+	position: absolute;
+	display: none;
+	width: 250px;
+	background-color: #dfdfdf;
+	box-shadow: -2px 2px 10px rgba(0,0,0,0.25);
+	transition: all 0.5s linear;
+	list-style: none;
+	left: 100%;
+	top: 0;
+}
+.dropdown2{
+	position: relative;
+}
+.inner li a{
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	outline: none;
+}
+.inner li a:hover{
+	background: #afafaf;
+	color: white;
+}
+.dropdown2:hover .inner{
+	display: block;
+}
+.container3{
+	display: inline-block;
+	position: absolute;
+	top: 70%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+}
+
+.container3 span{
+	height: 40px;
+}
+.container3 .content3{
+
+	width: 300px;
+	text-align: justify;
+	position: absolute;
+	top: -225px;
+	left: 25%;
+	background-color: #f1f1f190;
+	padding: 20px;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	display: none;
+}
+.container3:hover .content3{
+
+	display: block;
+
+}
+
+.dropdown2:after{
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #606060;
+    right: 10px;
+    top: 15px;
+}
+
+.content3:after{
+	content: "";
+	position: absolute;
+	display: block;
+	border-color: #f1f1f190 transparent transparent transparent;
+	border-style: solid;
+	border-width: 16px;
+	top: 100%;
+	left: 10%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<button>Dropdown 1</button>
+	<div class="content">
+		<a href="#">Home</a>
+		<a href="#">News</a>
+		<a href="#">Help</a>
+		<a href="#">Contact</a>
+		<a href="#">About</a>
+	</div>
+</div>
+<div class="container2">
+	<button>Dropdown 2</button>
+	<ul class="content2">
+		<li><a href="#">Home</a></li>
+		<li class="dropdown2">
+			<a href="#" >News</a>
+			<ul class="inner">
+				<li><a href="#">Top</a></li>
+				<li><a href="#">World</a></li>
+				<li><a href="#">India</a></li>
+				<li><a href="#">States</a></li>
+				<li><a href="#">Urban</a></li>
+			</ul>	
+		</li>
+		<li><a href="#">Help</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</div>
+<div class="container3">
+	<div class="elem">
+		This is just a content where hovering mouse over it dropup will appear
+	</div>
+	<div class="content3">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 	
+	</div>
+</div>
+
+</body>
+<script>
+</script>
+
+</html>
