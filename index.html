@@ -1,1 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Example of NavList</title>
+	<style type="text/css">
+		*{ padding: 0; margin: 0; box-sizing: border-box; }
+		body{
+			margin-left: 50px;
+		}
+		ul{
+			margin-top: 20px;
+		}
+		#list2, #list3{
+			background-color: #e0e0e0;
+			width: 200px;
+			height: auto;
+			list-style: none;
+		}
+		#list2 li, #list3 li{
+			border: 1px solid #787878;
+			padding: 5px 10px;
+		}
 
+		#list3 li:first-child{
+			background-color: black;
+			color: white;
+		}
+		#list4, #list5{
+			width: 200px;
+			height: auto;
+			list-style: none
+		}
+		#list4 li{
+			background-color: skyblue;
+			padding: 8px 10px;
+			border-left: 3px solid blue;
+			margin-top: 1px;
+		}
+		#list5 li{
+			background-color: green;
+			color:  white;
+			margin: 2px;
+			border-radius: 4px;
+			text-align: center;
+			padding: 5px 10px;
+			width: auto;
+		}
+		#list5 li:hover{
+			cursor: pointer;
+			background-color: #00AA00;
+		}
+		#list6{
+			list-style: none;
+			width: 150px;
+			height: 100px;
+			overflow-x: auto;
+		}
+		#list6 li{
+			background-color: magenta;
+			color:  white;
+			margin: 2px;
+			border: 1px solid black;
+			padding: 5px 10px;
+		}
+
+		#list7, #list8, #list67{
+			overflow: auto;
+			list-style: none;
+		}
+
+		#list7 li, #list67 li{
+			display: inline-block;
+			padding: 12px 16px;
+			color: yellow;
+			background-color: black;
+			float: left;
+		}
+		#list7 li
+		#list7:after{
+			clear: both;
+		}
+		#list8{ background-color: #f1f1f1; }
+		#list8 li{
+			display: inline-block;
+			padding: 12px 16px;
+			color: white;
+			background-color: violet;
+			float: left;
+		}
+
+		#list67 li{
+			background-color: #f9f9f9;
+			color: black;
+			border: 1px solid #909090;
+		}
+
+		#list8 li:last-child{
+			float: right;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>List Without Style</h1>
+	<ul id="list1">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Vertical List</h1>
+	<ul id="list2">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Vertical List - With Active</h1>
+	<ul id="list3">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Vertical List - New Style</h1>
+	<ul id="list4">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Vertical List - Button Group Style</h1>
+	<ul id="list5">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Vertical List - Scrollbar</h1>
+	<ul id="list6">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Horizontal List - Bordered</h1>
+	<ul id="list67">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Horizontal List</h1>
+	<ul id="list7">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+
+	<br>
+	<hr>
+	<br>
+	<h1>List WithStyle - Horizontal List with Last Item at Right</h1>
+	<ul id="list8">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>AJAX</li>
+		<li>ExpressJS</li>
+		<li>AngularJS</li>
+		<li>NodeJS</li>
+		<li>MongoDB</li>
+	</ul>
+
+	<br><br><br><br>
+</body>
+</html>
